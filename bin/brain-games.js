@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import askUsersName from '../src/cli.js';
+import askUsersName from '../games/cli.js';
 
-console.log('Welcome to the Brain Games!');
 askUsersName();
