@@ -1,15 +1,9 @@
 import readlineSync from 'readline-sync';
 
-const askUsersName = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name?: ');
-  console.log(`Hello, ${name}!`);
-  return name;
-};
+import { askUsersName, getRandomInt } from '../src/index.js';
 
 const usersName = askUsersName();
 
-const getRandomInt = (max) => Math.floor(Math.random() * max);
 const playGame = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 

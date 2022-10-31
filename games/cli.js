@@ -1,3 +1,3 @@
 import askUsersName from '../src/index.js';
 
-askUsersName();
+export default askUsersName;
