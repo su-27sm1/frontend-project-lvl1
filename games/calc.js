@@ -14,16 +14,23 @@ const playCalcGame = () => {
   console.log('What is the result of the expression?');
 
   for (let i = 0; i < 3; i += 1) {
-    const num1 = getRandomInt(99);
-    const num2 = getRandomInt(99);
+    const num1 = getRandomInt(20);
+    const num2 = getRandomInt(20);
     const operator = genRandOperator();
-    const rightAnswer = eval(`${num1} ${operator} ${num2}`);
+    let rightAnswer;
+    if (operator === '+') {
+      rightAnswer = num1 + num2;
+    } else if (operator === '-') {
+      rightAnswer = num1 - num2;
+    } else {
+      rightAnswer = num1 * num2;
+    }
 
     console.log(`Question: ${num1} ${operator} ${num2}`);
 
-    const usersAnswer = readlineSync.question('Your answer: ');
+    const usersAnswer = Number(readlineSync.question('Your answer: '));
 
-    if (usersAnswer == rightAnswer) {
+    if (usersAnswer === rightAnswer) {
       console.log('Correct!');
     } else {
       const uncorrectMessage = `${usersAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${usersName}!`;
