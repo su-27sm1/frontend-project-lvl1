@@ -6,7 +6,7 @@ const usersName = askUsersName();
 
 const genRandOperator = () => {
   const arr = ['+', '-', '*'];
-  const rand = () => Math.floor(Math.random() * arr.length);
+  const rand = () => getRandomInt(arr.length);
   return arr[rand()];
 };
 
@@ -19,26 +19,23 @@ const playCalcGame = () => {
     const operator = genRandOperator();
     let rightAnswer;
     if (operator === '+') {
-      rightAnswer = num1 + num2;
+      rightAnswer = String(num1 + num2);
     } else if (operator === '-') {
-      rightAnswer = num1 - num2;
+      rightAnswer = String(num1 - num2);
     } else {
-      rightAnswer = num1 * num2;
+      rightAnswer = String(num1 * num2);
     }
 
     console.log(`Question: ${num1} ${operator} ${num2}`);
 
-    const usersAnswer = Number(readlineSync.question('Your answer: '));
+    const usersAnswer = readlineSync.question('Your answer: ');
 
     if (usersAnswer === rightAnswer) {
       console.log('Correct!');
     } else {
       const uncorrectMessage = `${usersAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${usersName}!`;
       console.log(uncorrectMessage);
-
-      if (uncorrectMessage) {
-        return;
-      }
+      return;
     }
   }
   console.log(`Congratulations, ${usersName}!`);

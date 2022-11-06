@@ -28,14 +28,11 @@ const guessPrime = () => {
     if (meaning1 === true || meaning2 === true) {
       console.log('Correct!');
     } else {
-      const oppositeAnswer = usersAnswer === 'yes' ? 'no' : 'yes';
+      const rightAnswer = usersAnswer === 'yes' ? 'no' : 'yes';
 
-      const uncorrectMessage = `${usersAnswer} is wrong answer ;(. Correct answer was ${oppositeAnswer}.\nLet's try again, ${usersName}!`;
+      const uncorrectMessage = `${usersAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${usersName}!`;
       console.log(uncorrectMessage);
-
-      if (uncorrectMessage) {
-        return;
-      }
+      return;
     }
   }
   console.log(`Congratulations, ${usersName}!`);

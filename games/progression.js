@@ -23,20 +23,17 @@ const guessProgression = () => {
       i += 1;
       arr.push(startNumber);
     }
-    const removed = arr.splice(randomInt1(2, 8), 1, '..').join('');
+    const rightAnswer = arr.splice(randomInt1(2, 8), 1, '..').join('');
 
     console.log(`Question: ${arr}`);
     const usersAnswer = readlineSync.question('Your answer: ');
 
-    if (usersAnswer === removed) {
+    if (usersAnswer === rightAnswer) {
       console.log('Correct!');
     } else {
-      const uncorrectMessage = `${usersAnswer} is wrong answer ;(. Correct answer was ${removed}.\nLet's try again, ${usersName}!`;
+      const uncorrectMessage = `${usersAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${usersName}!`;
       console.log(uncorrectMessage);
-
-      if (uncorrectMessage) {
-        return;
-      }
+      return;
     }
   }
   console.log(`Congratulations, ${usersName}!`);
