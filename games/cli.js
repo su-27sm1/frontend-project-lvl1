@@ -1,3 +1,3 @@
-import askUsersName from '../src/index.js';
+const askUsersName = () => console.log('Welcome to the Brain Games!');
 
 export default askUsersName;
