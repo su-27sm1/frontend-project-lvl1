@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import askUsersName from '../games/cli.js';
+import gameGreeting from '../games/cli.js';
 
-askUsersName();
+gameGreeting();
