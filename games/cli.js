@@ -1,3 +1,3 @@
-const gameGreeting = () => console.log('Welcome to the Brain Games!');
+import { askUsersName } from '../src/index.js';
 
-export default gameGreeting;
+export default askUsersName;
