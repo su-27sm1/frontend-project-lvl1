@@ -14,7 +14,7 @@ const playGame = () => {
     const usersAnswer = readlineSync.question('Your answer: ');
     const meaning1 = num % 2 === 0 && usersAnswer === 'yes';
     const meaning2 = num % 2 !== 0 && usersAnswer === 'no';
-    if (meaning1 === true || meaning2 === true) {
+    if (meaning1 || meaning2) {
       console.log('Correct!');
     } else {
       const rightAnswer = usersAnswer === 'yes' ? 'no' : 'yes';
