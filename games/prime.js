@@ -25,7 +25,7 @@ const guessPrime = () => {
 
     const meaning1 = isPrime() === true && usersAnswer === 'yes';
     const meaning2 = isPrime() === false && usersAnswer === 'no';
-    if (meaning1 || meaning2) {
+    if (meaning1 === true || meaning2 === true) {
       console.log('Correct!');
     } else {
       const rightAnswer = usersAnswer === 'yes' ? 'no' : 'yes';
