@@ -18,12 +18,12 @@ const guessProgression = () => {
     let i = 0;
     const arr = [];
 
-    while (i < randomInt1(9, 11)) {
+    while (i < randomInt1(5, 11)) {
       startNumber += multiplier;
       i += 1;
       arr.push(startNumber);
     }
-    const rightAnswer = arr.splice(randomInt1(5, 8), 1, '..').join('');
+    const rightAnswer = arr.splice(randomInt1(2, 4), 1, '..').join('');
 
     console.log(`Question: ${arr}`);
     const usersAnswer = readlineSync.question('Your answer: ');
