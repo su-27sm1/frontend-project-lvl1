@@ -23,7 +23,7 @@ const guessProgression = () => {
       i += 1;
       arr.push(startNumber);
     }
-    const rightAnswer = arr.splice(randomInt1(2, 8), 1, '..').join('');
+    const rightAnswer = arr.splice(randomInt1(5, 8), 1, '..').join('');
 
     console.log(`Question: ${arr}`);
     const usersAnswer = readlineSync.question('Your answer: ');
