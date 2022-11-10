@@ -27,14 +27,13 @@ const guessDivisor = () => {
     }
 
     const intersection = divNum1.filter((x) => divNum2.includes(x));
-    const rightAnswer = intersection[0];
     console.log(`Question: ${num1} ${num2}`);
     const usersAnswer = Number(readlineSync.question('Your answer: '));
 
-    if (usersAnswer === rightAnswer) {
+    if (usersAnswer === intersection[0]) {
       console.log('Correct!');
     } else {
-      const uncorrectMessage = `${usersAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${usersName}!`;
+      const uncorrectMessage = `${usersAnswer} is wrong answer ;(. Correct answer was ${intersection[0]}.\nLet's try again, ${usersName}!`;
       console.log(uncorrectMessage);
       return;
     }
