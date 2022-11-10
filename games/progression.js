@@ -24,8 +24,8 @@ const guessProgression = () => {
       arr.push(startNumber);
     }
     const rightAnswer = arr.splice(randomInt1(2, 4), 1, '..').join('');
-
-    console.log(`Question: ${arr}`);
+    const newArr = arr.join(' ').split(',');
+    console.log(`Question: ${newArr}`);
     const usersAnswer = readlineSync.question('Your answer: ');
 
     if (usersAnswer === rightAnswer) {
