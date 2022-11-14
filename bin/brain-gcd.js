@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import guessDivisor from '../games/gcd.js';
+import playDivisorGame from '../games/gcd.js';
 
-guessDivisor();
+playDivisorGame();

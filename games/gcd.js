@@ -4,7 +4,7 @@ import { askUsersName, getRandomInt } from '../src/index.js';
 
 const usersName = askUsersName();
 
-const guessDivisor = () => {
+const playDivisorGame = () => {
   console.log('Find the greatest common divisor of given numbers.');
 
   for (let c = 0; c < 3; c += 1) {
@@ -41,4 +41,4 @@ const guessDivisor = () => {
 
   console.log(`Congratulations, ${usersName}!`);
 };
-export default guessDivisor;
+export default playDivisorGame;
