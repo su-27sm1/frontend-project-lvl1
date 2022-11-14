@@ -1,12 +1,13 @@
 import readlineSync from 'readline-sync';
 
-import { askUsersName, getRandomInt } from '../src/index.js';
+import askUsersName from '../src/index.js';
+import getRandomInt from '../src/utils.js';
 
 const usersName = askUsersName();
 
 const genRandOperator = () => {
   const arr = ['+', '-', '*'];
-  const rand = () => getRandomInt(arr.length);
+  const rand = () => getRandomInt(0, 2);
   return arr[rand()];
 };
 
@@ -14,8 +15,8 @@ const playCalcGame = () => {
   console.log('What is the result of the expression?');
 
   for (let i = 0; i < 3; i += 1) {
-    const num1 = getRandomInt(20);
-    const num2 = getRandomInt(20);
+    const num1 = getRandomInt(1, 100);
+    const num2 = getRandomInt(1, 100);
     const operator = genRandOperator();
     let rightAnswer;
     if (operator === '+') {
