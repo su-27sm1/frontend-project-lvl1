@@ -4,7 +4,7 @@ import { askUsersName, getRandomInt } from '../src/index.js';
 
 const usersName = askUsersName();
 
-const playGame = () => {
+const playEvenGame = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
@@ -26,4 +26,4 @@ const playGame = () => {
   }
   console.log(`Congratulations, ${usersName}!`);
 };
-export default playGame;
+export default playEvenGame;
