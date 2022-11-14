@@ -4,7 +4,7 @@ import { askUsersName, getRandomInt } from '../src/index.js';
 
 const usersName = askUsersName();
 
-const guessPrime = () => {
+const guessPrimeGame = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
   for (let c = 0; c < 3; c += 1) {
@@ -38,4 +38,4 @@ const guessPrime = () => {
   console.log(`Congratulations, ${usersName}!`);
 };
 
-export default guessPrime;
+export default guessPrimeGame;
