@@ -4,7 +4,7 @@ import { askUsersName, getRandomInt } from '../src/index.js';
 
 const usersName = askUsersName();
 
-const guessProgression = () => {
+const playProgressionGame = () => {
   console.log('What number is missing in the progression?');
 
   for (let c = 0; c < 3; c += 1) {
@@ -38,4 +38,4 @@ const guessProgression = () => {
   }
   console.log(`Congratulations, ${usersName}!`);
 };
-export default guessProgression;
+export default playProgressionGame;
