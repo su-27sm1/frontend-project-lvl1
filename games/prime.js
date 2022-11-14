@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 
-import { askUsersName, getRandomInt } from '../src/index.js';
+import askUsersName from '../src/index.js';
+import getRandomInt from '../src/utils.js';
 
 const usersName = askUsersName();
 
@@ -8,7 +9,7 @@ const playPrimeGame = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
   for (let c = 0; c < 3; c += 1) {
-    const num = getRandomInt(100);
+    const num = getRandomInt(1, 100);
 
     console.log(`Question: ${num}`);
     const usersAnswer = readlineSync.question('Your answer: ');

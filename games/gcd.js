@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 
-import { askUsersName, getRandomInt } from '../src/index.js';
+import askUsersName from '../src/index.js';
+import getRandomInt from '../src/utils.js';
 
 const usersName = askUsersName();
 
@@ -8,8 +9,8 @@ const playDivisorGame = () => {
   console.log('Find the greatest common divisor of given numbers.');
 
   for (let c = 0; c < 3; c += 1) {
-    const num1 = getRandomInt(30) + 1;
-    const num2 = getRandomInt(30) + 1;
+    const num1 = getRandomInt(1, 100);
+    const num2 = getRandomInt(1, 100);
 
     const divNum1 = [];
     const divNum2 = [];
