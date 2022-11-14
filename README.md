@@ -8,4 +8,4 @@ https://asciinema.org/a/6dvcyVO19oph0XWdEJiPe96Zm
 https://asciinema.org/a/CBwHpi2gnPFdmbhOmxVYBa59R
 https://asciinema.org/a/F4oyX6PnLQfoHql39mr7V1lu8
 
-<script id="asciicast-Ob71kABTEL3aGrFw5ILH6yIdA" src="https://asciinema.org/a/Ob71kABTEL3aGrFw5ILH6yIdA.js" async></script>
+[![asciicast](https://asciinema.org/a/Ob71kABTEL3aGrFw5ILH6yIdA.svg)](https://asciinema.org/a/Ob71kABTEL3aGrFw5ILH6yIdA)
