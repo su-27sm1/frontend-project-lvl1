@@ -5,7 +5,7 @@
 
 Hi there ! I am going to present you my game named as Brain Games !
 In order to download it we can proceed to https://github.com/su-27sm1/frontend-project-lvl1 and find it there.
-Make command git clone https://github.com/su-27sm1/frontend-project-lvl1.git
+Make command git clone https://github.com/su-27sm1/frontend-project-lvl1.gitq
 Install dependencies: npm ci
 Input command: npm link and run game inserting brain-games.
 After that we can see grettings and question about your name!
