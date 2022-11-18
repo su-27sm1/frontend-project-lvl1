@@ -24,9 +24,12 @@ There are some instructions to play it:
 - brain-gcd
 - brain-prime
 - brain-progression<br>
-  Try to solve all problems correct and without mistakes!
-  We will have three rounds in each game.
-  Good luck !
+
+---
+
+Try to solve all problems correct and without mistakes!
+We will have three rounds in each game.
+Good luck !
 
 <h3 align="center"> Brain-even </h3>
 
