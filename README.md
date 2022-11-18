@@ -25,8 +25,22 @@ There are some instructions to play it:
   We will have three rounds in each game.
   Good luck !
 
+<h3 align="center"> Brain-even </h3>
+
 [![asciicast](https://asciinema.org/a/Ob71kABTEL3aGrFw5ILH6yIdA.svg)](https://asciinema.org/a/Ob71kABTEL3aGrFw5ILH6yIdA)
+
+<h3 align="center"> Brain-calc </h3>
+
 [![asciicast](https://asciinema.org/a/P62FadEySSrA9SRFnYnWYkyNH.svg)](https://asciinema.org/a/P62FadEySSrA9SRFnYnWYkyNH)
+
+<h3 align="center"> Brain-gcd </h3>
+
 [![asciicast](https://asciinema.org/a/6dvcyVO19oph0XWdEJiPe96Zm.svg)](https://asciinema.org/a/6dvcyVO19oph0XWdEJiPe96Zm)
+
+<h3 align="center"> Brain-progression </h3>
+
 [![asciicast](https://asciinema.org/a/CBwHpi2gnPFdmbhOmxVYBa59R.svg)](https://asciinema.org/a/CBwHpi2gnPFdmbhOmxVYBa59R)
+
+<h3 align="center"> Brain-prime </h3>
+
 [![asciicast](https://asciinema.org/a/F4oyX6PnLQfoHql39mr7V1lu8.svg)](https://asciinema.org/a/F4oyX6PnLQfoHql39mr7V1lu8)
