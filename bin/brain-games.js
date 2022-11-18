@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import grettings from '../games/cli.js';
+import grettings from '../src/cli.js';
 
 grettings();
