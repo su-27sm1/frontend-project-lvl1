@@ -3,16 +3,19 @@
 [![Actions Status](https://github.com/su-27sm1/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/su-27sm1/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/su-27sm1/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/2bb50ef4a200abc23589/maintainability" /></a>
 
-Hi there ! I am going to present you my game named as Brain Games !
-In order to download it
-we can proceed to https://github.com/su-27sm1/frontend-project-lvl1 and find it there.
+## Hi there !\ I am going to present you my game named as Brain Games !
 
-Make command git clone https://github.com/su-27sm1/frontend-project-lvl1.git
+## In order to download it we can proceed to https://github.com/su-27sm1/frontend-project-lvl1 and find it there.
 
-Install dependencies: npm ci
+## Make command _git clone_ https://github.com/su-27sm1/frontend-project-lvl1.git
 
-Input command: npm link
-and run game inserting brain-games.
+## Install dependencies: _npm ci_
+
+Input command: _npm link_<br>
+and run game inserting _brain-games_
+
+---
+
 After that we can see grettings and question about your name!
 There are some instructions to play it:
 
