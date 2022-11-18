@@ -23,7 +23,7 @@ There are some instructions to play it:
 - brain-even
 - brain-gcd
 - brain-prime
-- brain-progression
+- brain-progression<br>
   Try to solve all problems correct and without mistakes!
   We will have three rounds in each game.
   Good luck !
