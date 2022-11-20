@@ -25,4 +25,6 @@ const roundGenerateGame = () => {
   return [question, correctAnswer];
 };
 
-export default mainPlayGame(gameDescription, roundGenerateGame);
+export default () => {
+  mainPlayGame(gameDescription, roundGenerateGame);
+};
