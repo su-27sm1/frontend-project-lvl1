@@ -1,12 +1,11 @@
-import mainPlayGame from '../index.js';
-
+import runGame from '../index.js';
 import getRandomInt from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
-const roundGenerateGame = () => {
+
+const makeRound = () => {
   let startNumber = getRandomInt(1, 100);
   const multiplier = getRandomInt(2, 10);
-
   let i = 0;
   const arr = [];
 
@@ -15,11 +14,12 @@ const roundGenerateGame = () => {
     i += 1;
     arr.push(startNumber);
   }
+
   const correctAnswer = arr.splice(getRandomInt(2, 4), 1, '..').join('');
   const newArr = arr.join(' ').split(',');
   const question = `${newArr}`;
   return [question, correctAnswer];
 };
 export default () => {
-  mainPlayGame(gameDescription, roundGenerateGame);
+  runGame(gameDescription, makeRound);
 };
