@@ -3,23 +3,30 @@ import getRandomInt from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const makeRound = () => {
+const getProgression = () => {
   let startNumber = getRandomInt(1, 100);
-  const multiplier = getRandomInt(2, 10);
-  let i = 0;
-  const arr = [];
+  const progressionStep = getRandomInt(2, 10);
+  let progressionLength = 0;
+  const progression = [];
 
-  while (i < getRandomInt(5, 11)) {
-    startNumber += multiplier;
-    i += 1;
-    arr.push(startNumber);
+  while (progressionLength < getRandomInt(5, 11)) {
+    startNumber += progressionStep;
+    progressionLength += 1;
+    progression.push(startNumber);
   }
+  return progression;
+};
 
-  const correctAnswer = arr.splice(getRandomInt(2, 4), 1, '..').join('');
-  const newArr = arr.join(' ').split(',');
-  const question = `${newArr}`;
+const makeRound = () => {
+  const madeProgression = getProgression();
+  const correctAnswer = madeProgression
+    .splice(getRandomInt(2, 4), 1, '..')
+    .join('');
+  const resultProgression = madeProgression.join(' ').split(',');
+  const question = `${resultProgression}`;
   return [question, correctAnswer];
 };
+
 export default () => {
   runGame(gameDescription, makeRound);
 };
