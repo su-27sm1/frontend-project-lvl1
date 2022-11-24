@@ -3,28 +3,18 @@ import getRandomInt from '../utils.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
+const getGcd = (num1, num2) => {
+  if (num1 === 0) {
+    return num2;
+  }
+  return getGcd(num2 % num1, num1);
+};
+
 const makeRound = () => {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
-
-  const divNum1 = [];
-  const divNum2 = [];
-
-  for (let i = num1; i > 0; i -= 1) {
-    if (num1 % i === 0) {
-      divNum1.push(i);
-    }
-  }
-
-  for (let j = num2; j > 0; j -= 1) {
-    if (num2 % j === 0) {
-      divNum2.push(j);
-    }
-  }
-
-  const intersection = divNum1.filter((x) => divNum2.includes(x));
   const question = `${num1} ${num2}`;
-  const correctAnswer = String(intersection[0]);
+  const correctAnswer = String(getGcd(num1, num2));
   return [question, correctAnswer];
 };
 
