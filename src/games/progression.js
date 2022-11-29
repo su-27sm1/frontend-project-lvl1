@@ -3,13 +3,12 @@ import getRandomInt from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const getProgression = () => {
-  let startNumber = getRandomInt(1, 100);
-  const progressionStep = getRandomInt(2, 10);
+const getProgression = (startNumber, progressionStep) => {
   let progressionLength = 0;
   const progression = [];
 
   while (progressionLength < getRandomInt(5, 11)) {
+    // eslint-disable-next-line no-param-reassign
     startNumber += progressionStep;
     progressionLength += 1;
     progression.push(startNumber);
@@ -18,7 +17,9 @@ const getProgression = () => {
 };
 
 const makeRound = () => {
-  const madeProgression = getProgression();
+  const startNumber = getRandomInt(1, 100);
+  const progressionStep = getRandomInt(2, 10);
+  const madeProgression = getProgression(startNumber, progressionStep);
   const correctAnswer = madeProgression
     .splice(getRandomInt(2, 4), 1, '..')
     .join('');
