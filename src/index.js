@@ -16,13 +16,14 @@ const runGame = (gameDescription, makeRound) => {
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      return console.log(
+      console.log(
         // eslint-disable-next-line comma-dangle
         `${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${userName}!`
       );
+      return;
     }
   }
-  return console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runGame;
