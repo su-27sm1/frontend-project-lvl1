@@ -7,7 +7,8 @@ Hexlet tests and linter status:
 
 _<h3 align="center">Hello Everybody !</h3>I am going to present you game named as Brain Games !_
 
-In order to download it we can proceed to `https://github.com/su-27sm1/frontend-project-lvl1 _and find it there.`
+In order to download it we can proceed to `https://github.com/su-27sm1/frontend-project-lvl1`  
+and find it there.
 
 Make command: _git clone_ `https://github.com/su-27sm1/frontend-project-lvl1.git`
 
