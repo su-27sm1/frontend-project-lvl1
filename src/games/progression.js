@@ -1,25 +1,29 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable comma-dangle */
 import runGame from '../index.js';
 import getRandomInt from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const getProgression = (startNumber, progressionStep) => {
-  let progressionLength = 0;
+const getProgression = (startNumber, progressionStep, progressionLength) => {
   const progression = [];
 
-  while (progressionLength < getRandomInt(5, 11)) {
-    // eslint-disable-next-line no-param-reassign
+  for (let i = 0; i < progressionLength; i += 1) {
     startNumber += progressionStep;
-    progressionLength += 1;
     progression.push(startNumber);
   }
   return progression;
 };
 
 const makeRound = () => {
+  const progressionLength = getRandomInt(5, 11);
   const startNumber = getRandomInt(1, 100);
   const progressionStep = getRandomInt(2, 10);
-  const madeProgression = getProgression(startNumber, progressionStep);
+  const madeProgression = getProgression(
+    startNumber,
+    progressionStep,
+    progressionLength
+  );
   const correctAnswer = madeProgression
     .splice(getRandomInt(2, 4), 1, '..')
     .join('');
