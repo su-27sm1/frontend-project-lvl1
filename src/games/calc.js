@@ -3,7 +3,7 @@ import getRandomInt from '../utils.js';
 
 const getRandOperator = () => {
   const operators = ['+', '-', '*'];
-  return operators[getRandomInt(0, operators.length)];
+  return operators[getRandomInt(0, operators.length - 1)];
 };
 
 const getOperatorExpression = (num1, operator, num2) => {
