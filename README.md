@@ -5,11 +5,11 @@ Hexlet tests and linter status:
 
 ---
 
-_<h3 align="center">Hello Everybody !</h3>_ _I am going to present you game named as Brain Games !_
+_<h3 align="center">Hello Everybody !</h3>I am going to present you game named as Brain Games !_
 
-_In order to download it we can proceed to_ https://github.com/su-27sm1/frontend-project-lvl1 _and find it there._
+In order to download it we can proceed to `https://github.com/su-27sm1/frontend-project-lvl1 _and find it there.`
 
-Make command: _git clone_ https://github.com/su-27sm1/frontend-project-lvl1.git
+Make command: _git clone_ `https://github.com/su-27sm1/frontend-project-lvl1.git`
 
 Install dependencies: _npm ci_
 
@@ -21,11 +21,15 @@ and run game inserting: _brain-games_
 _After that we can see grettings and question about your name!
 There are some instructions to play it:_
 
-- _brain-calc_
-- _brain-even_
-- _brain-gcd_
-- _brain-prime_
-- _brain-progression_<br>
+```
+
+- brain-calc
+- brain-even
+- brain-gcd
+- brain-prime
+- brain-progression
+
+```
 
 ---
 
@@ -57,4 +61,4 @@ _<h3 align="center"> Brain-prime </h3>_
 
 <h3 align="center"> Minimun system requirements: </h3>
 
-• MacOS/Linux • Windows + WSL • node.js v16.0.0
+<h3 align="center">• MacOS/Linux • Windows + WSL • node.js v16.0.0 •</h3>
